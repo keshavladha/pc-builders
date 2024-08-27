@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Buttons on Click</title>
+    <style>
+        /* Initially hide the new buttons */
+        #newButtons {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="showButton" onclick="showNewButtons()">Click Me</button>
+
+    <!-- New buttons that will appear -->
+    <div id="newButtons">
+        <button>Button 1</button>
+        <button>Button 2</button>
+    </div>
+
+    <script>
+        function showNewButtons() {
+            // Display the new buttons when the original button is clicked
+            document.getElementById('newButtons').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
